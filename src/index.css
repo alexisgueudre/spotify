@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(17, 17, 17);
+  color: white;
+}
+
+#Page{
+  display: flex;
+
+  justify-content: space-around;
+}
+
+#Navbar{
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+li{
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+a, button{
+  text-decoration: none;
+  font-size: large;
+  color:white;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+a:hover, button:hover{
+  background-color: #A2A19A;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+a:active, button:active{
+  box-shadow: 0px 0px 0px 5px #A2A19A80;
+}
+
+.Content{
+  width: 80%;
+  height: auto;
+  margin-top: 50px;
+}
+
+#RandomAlbums{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.album > span > img{
+  margin-left: 5px;
+  border-radius: 7px;
+}
+
+.searchInput{
+  color: #000;
+  padding: 6px 48px;
+  height: 40px;
+  width: 40%;
+  outline: none;
+  border: 0;
+  border-radius: 500px;
+  text-overflow: ellipsis;
+ }
+
+ .searchButton{
+   margin-left: 2px;
+   font-size: x-large;
+ }
+
+ .searchButton:hover{
+  border-radius: 50%!important;
+ }
+
+ .contentResult {
+  display: grid;
+  grid-template-columns: minmax(200px, auto);
+  grid-gap: 20px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+ }
+
+code{
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input{
+  color: #000;
+  padding: 6px 48px;
+  height: 40px;
+  width: 100%;
+  border: 0;
+  border-radius: 500px;
+  text-overflow: ellipsis;
+}
+
+#Genres, #Albums, #Artists, #Result{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.genre{
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 25px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+/* CHAQUE GENRE */
+
+.color1 .genre{
+  background-color: darkblue;
+}
+
+.color2 .genre{
+  background-color: darkgreen;
+}
+
+.color3 .genre{
+  background-color: darkred;
+}
+
+.color4 .genre{
+  background-color: darkviolet;
+}
+
+.color5 .genre{
+  background-color: darkgoldenrod;
+}
+
+.color6 .genre{
+  background-color: darksalmon;
+}
+
+.color7 .genre{
+  background-color: darkorchid;
+}
+
+.color8 .genre{
+  background-color: darkslategray;
+}
+
+.color9 .genre{
+  background-color: darkturquoise;
+}
+
+.color10 .genre{
+  background-color: darkkhaki;
+}
+
+.genre:hover, .albumList:hover, .artists:hover{
+  box-shadow: 0px 0px 15px white;
+}
+
+/* ALBUMS PART */
+
+.albumList, .artists{
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  border-radius: 7px;
+}
+
+.albumList > img, .artists > img{
+  border-radius: 7px;
+}
+
+figcaption{
+  color:white;
+  z-index: 1;
+  bottom: 0.3%;
+  position: absolute;
+  text-align: left;
+  border-radius: 7px;
+  width: 200px;
+  background-color: rgba(128, 128, 128, 0.562);
+}
+
+.trackList:hover{
+  opacity: 1!important;
+  cursor: default!important;
+  box-shadow: none!important;
+}
+
+.title, .text{
+  width: 1200px;
+}
+audio{
+  background-color: lightgray;
+  border-radius: 5px;
+  outline: none;
+}
